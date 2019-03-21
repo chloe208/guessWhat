@@ -115,12 +115,17 @@ Peng Jiang, 101083241, CRN-47220</string>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFL-2u-CZs">
                                 <rect key="frame" x="0.0" y="579" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Sign In" width="178" id="Xw3-VE-yFZ">
+                                    <barButtonItem title="Sign In" width="139" id="Xw3-VE-yFZ">
                                         <connections>
                                             <segue destination="WWb-qC-JGH" kind="show" id="hrg-oM-VWw"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="About GuessWhat" width="184.5" id="0JR-Vs-VTf">
+                                    <barButtonItem title="Register" width="96" id="Scc-mO-54z">
+                                        <connections>
+                                            <segue destination="3ri-Ii-jWU" kind="show" id="WE9-Yx-WpD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="About GW" width="184.5" id="0JR-Vs-VTf">
                                         <connections>
                                             <segue destination="apK-Rf-ZzT" kind="show" id="IzR-AR-QSZ"/>
                                         </connections>
@@ -162,7 +167,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fw-vJ-lKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="9"/>
+            <point key="canvasLocation" x="848.79999999999995" y="8.5457271364317844"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WTj-Hm-9tZ">
@@ -279,7 +284,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8P1-Z0-H64">
-                                <rect key="frame" x="0.0" y="20" width="375" height="768"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Remaining attemps..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="244-og-mOj">
                                 <rect key="frame" x="0.0" y="20" width="375" height="35"/>
@@ -296,7 +301,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <rect key="frame" x="16" y="94" width="166" height="166"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP8-w4-SlG">
-                                <rect key="frame" x="0.0" y="535" width="375" height="253"/>
+                                <rect key="frame" x="0.0" y="535" width="375" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="gIM-vE-Bcr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="vir-9m-pv8"/>
@@ -670,6 +675,125 @@ Peng Jiang, 101083241, CRN-47220</string>
             <point key="canvasLocation" x="1622" y="1295"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Ysu-iU-WOZ">
+            <objects>
+                <viewController id="3ri-Ii-jWU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqi-gP-mUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Now!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWq-GN-b3h">
+                                <rect key="frame" x="134" y="74" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-ta-ocj">
+                                <rect key="frame" x="208" y="327" width="115" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tab-ua-afs" kind="show" id="aKK-Py-jO1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiC-vK-6S5">
+                                <rect key="frame" x="51" y="327" width="115" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tab-ua-afs" kind="show" id="9tr-1b-edi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username or Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acI-Xv-0YZ">
+                                <rect key="frame" x="51" y="155" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmR-W3-AST">
+                                <rect key="frame" x="51" y="198" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirm password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztr-4R-r6f">
+                                <rect key="frame" x="51" y="246" width="144" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m1p-Uv-Yc3">
+                                <rect key="frame" x="227" y="150" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3c-bM-nQt">
+                                <rect key="frame" x="227" y="198" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOI-4L-FiT">
+                                <rect key="frame" x="227" y="241" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pmR-W3-AST" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="35" id="3Kk-N2-nhz"/>
+                            <constraint firstItem="sOI-4L-FiT" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="189" id="5FG-rJ-E6g"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="j3c-bM-nQt" secondAttribute="trailing" constant="67" id="BUq-jY-dpk"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="m1p-Uv-Yc3" secondAttribute="trailing" constant="67" id="COH-98-2rI"/>
+                            <constraint firstItem="eWq-GN-b3h" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="134" id="FFr-sa-Cv1"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="j3c-bM-nQt" secondAttribute="bottom" constant="427" id="Faj-26-b9D"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="Ztr-4R-r6f" secondAttribute="bottom" constant="388" id="Gpv-eT-feI"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="sOI-4L-FiT" secondAttribute="bottom" constant="384" id="H5Q-EA-Thp"/>
+                            <constraint firstItem="m1p-Uv-Yc3" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="211" id="Imo-V8-KiX"/>
+                            <constraint firstItem="Cyd-ta-ocj" firstAttribute="leading" secondItem="jiC-vK-6S5" secondAttribute="trailing" constant="51" id="KDp-Cn-8N5"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="acI-Xv-0YZ" secondAttribute="bottom" constant="479" id="LUr-wp-13j"/>
+                            <constraint firstItem="acI-Xv-0YZ" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="35" id="Li3-QJ-RrN"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="eWq-GN-b3h" secondAttribute="trailing" constant="134" id="Prq-hg-JXH"/>
+                            <constraint firstItem="acI-Xv-0YZ" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="103" id="RBc-K6-GHS"/>
+                            <constraint firstItem="jiC-vK-6S5" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="109" id="SIi-7r-YpQ"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="pmR-W3-AST" secondAttribute="bottom" constant="436" id="Sl3-cK-OgK"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="sOI-4L-FiT" secondAttribute="trailing" constant="67" id="TOg-xe-STe"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="Cyd-ta-ocj" secondAttribute="trailing" constant="110" id="UYS-v6-U3V"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="Cyd-ta-ocj" secondAttribute="bottom" constant="266" id="Vjy-AU-G8h"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="Ztr-4R-r6f" secondAttribute="trailing" constant="196" id="Wal-tN-gJf"/>
+                            <constraint firstItem="jiC-vK-6S5" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="307" id="b5N-fp-cAE"/>
+                            <constraint firstItem="Cyd-ta-ocj" firstAttribute="leading" secondItem="jiC-vK-6S5" secondAttribute="trailing" constant="51" id="eRU-S5-bre"/>
+                            <constraint firstItem="j3c-bM-nQt" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="146" id="ffe-9G-XEx"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="pmR-W3-AST" secondAttribute="trailing" constant="261" id="fyH-mr-H50"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="acI-Xv-0YZ" secondAttribute="trailing" constant="191" id="gU9-bo-o9b"/>
+                            <constraint firstItem="Ztr-4R-r6f" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="35" id="iUP-bJ-fhp"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="jiC-vK-6S5" secondAttribute="bottom" constant="266" id="l9G-ga-vTK"/>
+                            <constraint firstItem="Cyd-ta-ocj" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="307" id="mUZ-DB-V5k"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="eWq-GN-b3h" secondAttribute="bottom" constant="528" id="mkr-Tb-EaO"/>
+                            <constraint firstItem="eWq-GN-b3h" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="54" id="n3y-R3-71r"/>
+                            <constraint firstItem="Ztr-4R-r6f" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="194" id="p2K-DQ-cUk"/>
+                            <constraint firstItem="m1p-Uv-Yc3" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="98" id="tGb-Ag-IvH"/>
+                            <constraint firstItem="pmR-W3-AST" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="146" id="teG-k0-wW9"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="m1p-Uv-Yc3" secondAttribute="bottom" constant="475" id="uX2-j3-wBR"/>
+                            <constraint firstItem="j3c-bM-nQt" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="211" id="v76-XP-ofc"/>
+                            <constraint firstItem="sOI-4L-FiT" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="211" id="woV-3M-AUx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZPv-EY-CLq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTA-gM-x3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.60000000000002" y="691.304347826087"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="zhC-ST-wgX">
             <objects>
                 <viewController id="WWb-qC-JGH" sceneMemberID="viewController">
@@ -1002,10 +1126,10 @@ Peng Jiang, 101083241, CRN-47220</string>
         <image name="zoo" width="1280" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xwq-68-dcC"/>
-        <segue reference="TKA-7P-jH0"/>
-        <segue reference="ItY-g0-Xot"/>
-        <segue reference="ewt-fv-BFe"/>
-        <segue reference="h8d-bc-VYm"/>
+        <segue reference="IzR-AR-QSZ"/>
+        <segue reference="ncq-oe-4U4"/>
+        <segue reference="tNr-Cn-kSU"/>
+        <segue reference="J2O-7e-n4T"/>
+        <segue reference="aKK-Py-jO1"/>
     </inferredMetricsTieBreakers>
 </document>
