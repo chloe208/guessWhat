@@ -33,6 +33,7 @@ class RegisterViewController: UIViewController {
     
     
     //checking if there are any empty fields
+        
     if (userNameTextField.text?.isEmpty ?? true) {
     
         let alert = UIAlertController(title: "Error!", message: "Username, cannot be empty", preferredStyle: UIAlertController.Style.alert)
@@ -49,25 +50,32 @@ class RegisterViewController: UIViewController {
     }
         
     //checking if passwords are matching
+        
     else if (userPassword != userRepeatPassword){
-    //passwords don't match
         let alert = UIAlertController(title: "Error!", message: "Paaswords do not match", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
         self.present(alert, animated: true, completion: nil);
         
     }
+        
     else {
         
+        //When The User restration is successful, it redirects to sign in page
         let alert = UIAlertController(title: "Congraturation!", message: "Registration is sucessful.", preferredStyle: UIAlertController.Style.alert);
-        alert.addAction(UIAlertAction(title: "Go To Sign In!", style: UIAlertAction.Style.default, handler: nil));
-        self.present(alert, animated: true, completion: nil);
-
+        let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let signInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController;
+            self.present(signInViewController, animated: true, completion: nil);
         }
-
-  
         
+        alert.addAction(action);
+        self.present(alert, animated: true){};
+
 
         
+        }
+        
+   
     // Storing User Data
     UserDefaults.standard.set(userName, forKey: "userName");
     UserDefaults.standard.set(userPassword, forKey: "userPassword");
@@ -75,12 +83,6 @@ class RegisterViewController: UIViewController {
     
  
 }
-//
-//    func logInScreen() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil);
-//        let signInViewController = storyboard.instantiateInitialViewController(withIdentifier:"signInViewController" ) as! SignInViewController
-//        self.present(signInViewController, animated: true, completion: nil);
-//    }
 
 
 

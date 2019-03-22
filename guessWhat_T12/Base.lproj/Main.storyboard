@@ -724,18 +724,6 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0w-oI-Q0L">
-                                <rect key="frame" x="101" y="419" width="172" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Go To Main Page">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Tab-ua-afs" kind="show" id="Tlh-06-5cB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-ta-ocj">
                                 <rect key="frame" x="101" y="329" width="172" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -745,6 +733,13 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 </state>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="3ri-Ii-jWU" eventType="touchUpInside" id="7r6-oH-9uN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-Ug-boV">
+                                <rect key="frame" x="30" y="432" width="315" height="30"/>
+                                <state key="normal" title="I don't want to register. Go back to Main menu"/>
+                                <connections>
+                                    <segue destination="Tab-ua-afs" kind="show" id="CCW-i0-lhP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -762,6 +757,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="acI-Xv-0YZ" secondAttribute="bottom" constant="479" id="LUr-wp-13j"/>
                             <constraint firstItem="acI-Xv-0YZ" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="35" id="Li3-QJ-RrN"/>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="eWq-GN-b3h" secondAttribute="trailing" constant="134" id="Prq-hg-JXH"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="fnM-Ug-boV" secondAttribute="trailing" constant="30" id="Qic-cC-Frj"/>
                             <constraint firstItem="acI-Xv-0YZ" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="103" id="RBc-K6-GHS"/>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="pmR-W3-AST" secondAttribute="bottom" constant="436" id="Sl3-cK-OgK"/>
                             <constraint firstItem="Cyd-ta-ocj" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="193" id="TLy-B0-r4U"/>
@@ -769,6 +765,9 @@ Peng Jiang, 101083241, CRN-47220</string>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="Cyd-ta-ocj" secondAttribute="trailing" constant="110" id="UYS-v6-U3V"/>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="Cyd-ta-ocj" secondAttribute="bottom" constant="266" id="Vjy-AU-G8h"/>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="Ztr-4R-r6f" secondAttribute="trailing" constant="196" id="Wal-tN-gJf"/>
+                            <constraint firstItem="ZPv-EY-CLq" firstAttribute="bottom" secondItem="fnM-Ug-boV" secondAttribute="bottom" constant="127" id="XS3-6G-Sfh"/>
+                            <constraint firstItem="fnM-Ug-boV" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="446" id="YQd-fU-0f4"/>
+                            <constraint firstItem="fnM-Ug-boV" firstAttribute="leading" secondItem="ZPv-EY-CLq" secondAttribute="leading" constant="30" id="ZkR-3u-lYn"/>
                             <constraint firstItem="j3c-bM-nQt" firstAttribute="top" secondItem="ZPv-EY-CLq" secondAttribute="top" constant="146" id="ffe-9G-XEx"/>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="pmR-W3-AST" secondAttribute="trailing" constant="261" id="fyH-mr-H50"/>
                             <constraint firstItem="ZPv-EY-CLq" firstAttribute="trailing" secondItem="acI-Xv-0YZ" secondAttribute="trailing" constant="191" id="gU9-bo-o9b"/>
@@ -793,6 +792,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                         <outlet property="repeatPasswordTextField" destination="sOI-4L-FiT" id="Bvf-YF-vUw"/>
                         <outlet property="userNameTextField" destination="m1p-Uv-Yc3" id="M8q-Jt-7yr"/>
                         <outlet property="userPasswordTextField" destination="j3c-bM-nQt" id="990-OP-aUB"/>
+                        <segue destination="WWb-qC-JGH" kind="show" id="kyH-EP-sxg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTA-gM-x3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -808,7 +808,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Sign In " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-Zq-aTl">
-                                <rect key="frame" x="94" y="73" width="186" height="74"/>
+                                <rect key="frame" x="94" y="73" width="186" height="118"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -826,13 +826,13 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsG-uY-qMY">
-                                <rect key="frame" x="157" y="232" width="97" height="30"/>
+                                <rect key="frame" x="157" y="276" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAv-To-Ab3">
-                                <rect key="frame" x="139" y="312" width="97" height="36"/>
+                                <rect key="frame" x="139" y="356" width="97" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign In"/>
@@ -846,42 +846,41 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-ck-S1p">
-                                <rect key="frame" x="47" y="408" width="278" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Go Back To Main Menu">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmf-Tf-Lqt">
+                                <rect key="frame" x="12" y="403" width="347" height="74"/>
+                                <state key="normal" title="I don't want to Sign In. Go back to the Main Menu"/>
+                                <connections>
+                                    <segue destination="Tab-ua-afs" kind="show" id="y9T-MD-INK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IsF-D0-GyC" firstAttribute="trailing" secondItem="MAv-To-Ab3" secondAttribute="trailing" constant="139" id="0pW-8v-7nj"/>
-                            <constraint firstItem="lI3-ck-S1p" firstAttribute="top" secondItem="IsF-D0-GyC" secondAttribute="top" constant="388" id="1Ie-ET-eam"/>
                             <constraint firstItem="IsF-D0-GyC" firstAttribute="bottom" secondItem="MAv-To-Ab3" secondAttribute="bottom" constant="275" id="3UJ-nA-kHZ"/>
                             <constraint firstItem="jsG-uY-qMY" firstAttribute="top" secondItem="ZZT-UB-kQi" secondAttribute="bottom" constant="19" id="9om-iJ-juJ"/>
                             <constraint firstItem="jsG-uY-qMY" firstAttribute="leading" secondItem="CtS-UK-1iH" secondAttribute="trailing" constant="35" id="9x0-nR-IT0"/>
+                            <constraint firstItem="xmf-Tf-Lqt" firstAttribute="top" secondItem="IsF-D0-GyC" secondAttribute="top" constant="383" id="ByR-0M-dld"/>
                             <constraint firstItem="MAv-To-Ab3" firstAttribute="top" secondItem="jsG-uY-qMY" secondAttribute="bottom" constant="50" id="EqJ-tw-VSq"/>
                             <constraint firstItem="IsF-D0-GyC" firstAttribute="trailing" secondItem="ZZT-UB-kQi" secondAttribute="trailing" constant="121" id="F10-1l-NA8"/>
                             <constraint firstItem="IsF-D0-GyC" firstAttribute="bottom" secondItem="CtS-UK-1iH" secondAttribute="bottom" constant="364" id="Fak-Xz-AYO"/>
                             <constraint firstItem="IsF-D0-GyC" firstAttribute="trailing" secondItem="4q5-Zq-aTl" secondAttribute="trailing" constant="95" id="IPU-wY-DJr"/>
+                            <constraint firstItem="xmf-Tf-Lqt" firstAttribute="leading" secondItem="IsF-D0-GyC" secondAttribute="leading" constant="12" id="Ibm-Kd-KlD"/>
                             <constraint firstItem="4q5-Zq-aTl" firstAttribute="leading" secondItem="IsF-D0-GyC" secondAttribute="leading" constant="94" id="M7F-eS-o7z"/>
                             <constraint firstItem="ZZT-UB-kQi" firstAttribute="leading" secondItem="Cos-PY-taQ" secondAttribute="trailing" constant="19" id="MhE-A5-c8G"/>
                             <constraint firstItem="4q5-Zq-aTl" firstAttribute="top" secondItem="IsF-D0-GyC" secondAttribute="top" constant="53" id="PlH-ZU-nxi"/>
                             <constraint firstItem="CtS-UK-1iH" firstAttribute="top" secondItem="Cos-PY-taQ" secondAttribute="bottom" constant="26" id="WYh-fN-6Ad"/>
-                            <constraint firstItem="IsF-D0-GyC" firstAttribute="bottom" secondItem="lI3-ck-S1p" secondAttribute="bottom" constant="179" id="WcJ-wM-99e"/>
                             <constraint firstItem="Cos-PY-taQ" firstAttribute="leading" secondItem="IsF-D0-GyC" secondAttribute="leading" constant="47" id="WuJ-Kh-xQb"/>
                             <constraint firstItem="ZZT-UB-kQi" firstAttribute="top" secondItem="4q5-Zq-aTl" secondAttribute="bottom" constant="36" id="X5R-cd-Hj0"/>
                             <constraint firstItem="Cos-PY-taQ" firstAttribute="top" secondItem="4q5-Zq-aTl" secondAttribute="bottom" constant="41" id="YQp-g1-7yD"/>
                             <constraint firstItem="ZZT-UB-kQi" firstAttribute="leading" secondItem="Cos-PY-taQ" secondAttribute="trailing" constant="23" id="Zj4-St-h6R"/>
                             <constraint firstItem="CtS-UK-1iH" firstAttribute="top" secondItem="Cos-PY-taQ" secondAttribute="bottom" constant="23" id="dXC-r0-axJ"/>
-                            <constraint firstItem="lI3-ck-S1p" firstAttribute="leading" secondItem="IsF-D0-GyC" secondAttribute="leading" constant="47" id="fJG-nU-mvD"/>
-                            <constraint firstItem="IsF-D0-GyC" firstAttribute="trailing" secondItem="lI3-ck-S1p" secondAttribute="trailing" constant="50" id="hLU-O3-cLv"/>
                             <constraint firstItem="jsG-uY-qMY" firstAttribute="leading" secondItem="CtS-UK-1iH" secondAttribute="trailing" constant="31" id="lHK-QC-sPU"/>
                             <constraint firstItem="CtS-UK-1iH" firstAttribute="leading" secondItem="IsF-D0-GyC" secondAttribute="leading" constant="47" id="oUD-5b-VKo"/>
+                            <constraint firstItem="IsF-D0-GyC" firstAttribute="bottom" secondItem="xmf-Tf-Lqt" secondAttribute="bottom" constant="190" id="pqa-ze-nnh"/>
                             <constraint firstItem="MAv-To-Ab3" firstAttribute="leading" secondItem="IsF-D0-GyC" secondAttribute="leading" constant="139" id="qoe-P7-hZG"/>
                             <constraint firstItem="ZZT-UB-kQi" firstAttribute="top" secondItem="4q5-Zq-aTl" secondAttribute="bottom" constant="36" id="rTp-gI-EXl"/>
+                            <constraint firstItem="IsF-D0-GyC" firstAttribute="trailing" secondItem="xmf-Tf-Lqt" secondAttribute="trailing" constant="16" id="sFt-TX-ytQ"/>
                             <constraint firstItem="MAv-To-Ab3" firstAttribute="top" secondItem="jsG-uY-qMY" secondAttribute="bottom" constant="50" id="v3f-wM-Y11"/>
                             <constraint firstItem="IsF-D0-GyC" firstAttribute="trailing" secondItem="jsG-uY-qMY" secondAttribute="trailing" constant="121" id="vZR-Bs-c1j"/>
                             <constraint firstItem="jsG-uY-qMY" firstAttribute="top" secondItem="ZZT-UB-kQi" secondAttribute="bottom" constant="19" id="x1A-MD-wzO"/>
@@ -891,6 +890,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                     <connections>
                         <outlet property="userNameTextField" destination="ZZT-UB-kQi" id="OsJ-8A-i5q"/>
                         <outlet property="userPasswordTextField" destination="jsG-uY-qMY" id="g1T-4l-y6J"/>
+                        <segue destination="TJJ-US-g99" kind="show" id="w6U-Ib-SaF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0S-NX-WXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1022,10 +1022,10 @@ Peng Jiang, 101083241, CRN-47220</string>
             </objects>
             <point key="canvasLocation" x="3637.5999999999999" y="-264.01799100449779"/>
         </scene>
-        <!--View Controller-->
+        <!--User In View Controller-->
         <scene sceneID="Noy-pP-V2s">
             <objects>
-                <viewController id="TJJ-US-g99" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TJJ-US-g99" customClass="UserInViewController" customModule="guessWhat_T12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJH-kR-kjA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1149,10 +1149,11 @@ Peng Jiang, 101083241, CRN-47220</string>
         <image name="zoo" width="1280" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kyH-EP-sxg"/>
         <segue reference="Xwq-68-dcC"/>
         <segue reference="TKA-7P-jH0"/>
         <segue reference="ItY-g0-Xot"/>
         <segue reference="ewt-fv-BFe"/>
-        <segue reference="h8d-bc-VYm"/>
+        <segue reference="CCW-i0-lhP"/>
     </inferredMetricsTieBreakers>
 </document>

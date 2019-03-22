@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A18615D224475BA0063E1EA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18615C224475BA0063E1EA /* RegisterViewController.swift */; };
 		5A18615F224477630063E1EA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18615E224477630063E1EA /* SignInViewController.swift */; };
-		5A1861612244A6010063E1EA /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1861602244A6010063E1EA /* UserViewController.swift */; };
+		5A44356C2245582200825859 /* UserInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44356B2245582200825859 /* UserInViewController.swift */; };
 		5AEAB7372238BC5B009B5C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB7362238BC5B009B5C39 /* AppDelegate.swift */; };
 		5AEAB7392238BC5B009B5C39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB7382238BC5B009B5C39 /* ViewController.swift */; };
 		5AEAB73C2238BC5B009B5C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEAB73A2238BC5B009B5C39 /* Main.storyboard */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		5A18615C224475BA0063E1EA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5A18615E224477630063E1EA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		5A1861602244A6010063E1EA /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		5A44356B2245582200825859 /* UserInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInViewController.swift; sourceTree = "<group>"; };
 		5AEAB7332238BC5B009B5C39 /* guessWhat_T12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guessWhat_T12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEAB7362238BC5B009B5C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEAB7382238BC5B009B5C39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				5AEAB7422238BC5E009B5C39 /* Info.plist */,
 				5A18615C224475BA0063E1EA /* RegisterViewController.swift */,
 				5A18615E224477630063E1EA /* SignInViewController.swift */,
-				5A1861602244A6010063E1EA /* UserViewController.swift */,
+				5A44356B2245582200825859 /* UserInViewController.swift */,
 			);
 			path = guessWhat_T12;
 			sourceTree = "<group>";
@@ -266,9 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A18615F224477630063E1EA /* SignInViewController.swift in Sources */,
-				5A1861612244A6010063E1EA /* UserViewController.swift in Sources */,
 				5A18615D224475BA0063E1EA /* RegisterViewController.swift in Sources */,
 				5AEAB7392238BC5B009B5C39 /* ViewController.swift in Sources */,
+				5A44356C2245582200825859 /* UserInViewController.swift in Sources */,
 				5AEAB7372238BC5B009B5C39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
