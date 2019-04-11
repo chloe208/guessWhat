@@ -17,6 +17,8 @@
 		5AEAB7412238BC5E009B5C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEAB73F2238BC5E009B5C39 /* LaunchScreen.storyboard */; };
 		5AEAB74C2238BC5E009B5C39 /* guessWhat_T12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB74B2238BC5E009B5C39 /* guessWhat_T12Tests.swift */; };
 		5AEAB7572238BC5E009B5C39 /* guessWhat_T12UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB7562238BC5E009B5C39 /* guessWhat_T12UITests.swift */; };
+		BD2D469C225FC60F00AEE8DC /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2D469B225FC60F00AEE8DC /* EasyViewController.swift */; };
+		BD2D46A0225FD29300AEE8DC /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2D469F225FD29300AEE8DC /* gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		5AEAB7522238BC5E009B5C39 /* guessWhat_T12UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = guessWhat_T12UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEAB7562238BC5E009B5C39 /* guessWhat_T12UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessWhat_T12UITests.swift; sourceTree = "<group>"; };
 		5AEAB7582238BC5E009B5C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD2D469B225FC60F00AEE8DC /* EasyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyViewController.swift; path = "../../../../Downloads/guessWhat-master/guessWhat_T12/EasyViewController.swift"; sourceTree = "<group>"; };
+		BD2D469F225FD29300AEE8DC /* gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 				5AEAB73A2238BC5B009B5C39 /* Main.storyboard */,
 				5AEAB73D2238BC5E009B5C39 /* Assets.xcassets */,
 				5AEAB73F2238BC5E009B5C39 /* LaunchScreen.storyboard */,
+				BD2D469F225FD29300AEE8DC /* gradient.swift */,
 				5AEAB7422238BC5E009B5C39 /* Info.plist */,
+				BD2D469B225FC60F00AEE8DC /* EasyViewController.swift */,
 				5A18615C224475BA0063E1EA /* RegisterViewController.swift */,
 				5A18615E224477630063E1EA /* SignInViewController.swift */,
 				5A44356B2245582200825859 /* UserInViewController.swift */,
@@ -267,7 +273,9 @@
 			files = (
 				5A18615F224477630063E1EA /* SignInViewController.swift in Sources */,
 				5A18615D224475BA0063E1EA /* RegisterViewController.swift in Sources */,
+				BD2D469C225FC60F00AEE8DC /* EasyViewController.swift in Sources */,
 				5AEAB7392238BC5B009B5C39 /* ViewController.swift in Sources */,
+				BD2D46A0225FD29300AEE8DC /* gradient.swift in Sources */,
 				5A44356C2245582200825859 /* UserInViewController.swift in Sources */,
 				5AEAB7372238BC5B009B5C39 /* AppDelegate.swift in Sources */,
 			);

@@ -41,7 +41,7 @@ class SignInViewController: UIViewController {
                 
                 
                 
-                let alert = UIAlertController(title: "Welcome!", message: "Enjoy the Game.", preferredStyle: UIAlertController.Style.alert);
+                let alert = UIAlertController(title: "Welcome!", message: "Enjoy the Game.", preferredStyle: UIAlertControllerStyle.alert);
                 let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
                     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
                     let userInViewController = storyBoard.instantiateViewController(withIdentifier: "UserInViewController") as! UserInViewController;
@@ -57,23 +57,23 @@ class SignInViewController: UIViewController {
          
         else if (userNameTextField.text?.isEmpty ?? true) {
             
-            let alert = UIAlertController(title: "Error!", message: "Username, cannot be empty", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            let alert = UIAlertController(title: "Error!", message: "Username, cannot be empty", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
             self.present(alert, animated: true, completion: nil);
         }
             
         else if (userPasswordTextField.text?.isEmpty ?? true) {
             
-            let alert = UIAlertController(title: "Error!", message: "Password cannot be empty", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            let alert = UIAlertController(title: "Error!", message: "Password cannot be empty", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
             self.present(alert, animated: true, completion: nil);
             
         }
             
             // Alert message when User name and Password do not match
         else {
-            let alert = UIAlertController(title: "Error!", message: "User Name and Password do not match", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            let alert = UIAlertController(title: "Error!", message: "User Name and Password do not match", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
             self.present(alert, animated: true, completion: nil);
             
             

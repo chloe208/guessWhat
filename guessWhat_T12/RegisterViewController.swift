@@ -36,15 +36,15 @@ class RegisterViewController: UIViewController {
         
     if (userNameTextField.text?.isEmpty ?? true) {
     
-        let alert = UIAlertController(title: "Error!", message: "Username, cannot be empty", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+        let alert = UIAlertController(title: "Error!", message: "Username, cannot be empty", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
         self.present(alert, animated: true, completion: nil);
     }
     
     else if (userPasswordTextField.text?.isEmpty ?? true) {
    
-        let alert = UIAlertController(title: "Error!", message: "Password cannot be empty", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+        let alert = UIAlertController(title: "Error!", message: "Password cannot be empty", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
         self.present(alert, animated: true, completion: nil);
     
     }
@@ -52,8 +52,8 @@ class RegisterViewController: UIViewController {
     //checking if passwords are matching
         
     else if (userPassword != userRepeatPassword){
-        let alert = UIAlertController(title: "Error!", message: "Paaswords do not match", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+        let alert = UIAlertController(title: "Error!", message: "Paaswords do not match", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
         self.present(alert, animated: true, completion: nil);
         
     }
@@ -61,7 +61,7 @@ class RegisterViewController: UIViewController {
     else {
         
         //When The User restration is successful, it redirects to sign in page
-        let alert = UIAlertController(title: "Congraturation!", message: "Registration is sucessful.", preferredStyle: UIAlertController.Style.alert);
+        let alert = UIAlertController(title: "Congraturation!", message: "Registration is sucessful.", preferredStyle: UIAlertControllerStyle.alert);
         let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let signInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController;
