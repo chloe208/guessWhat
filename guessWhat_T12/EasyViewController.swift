@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 class EasyViewController: UIViewController {
 
@@ -15,17 +16,31 @@ class EasyViewController: UIViewController {
     @IBOutlet weak var guessLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var username: UILabel!
     
     @IBOutlet weak var checkButton: UIButton!
     
-
+    var db: OpaquePointer?
     var numberOfGuess = 0
     var score = 0
     var correctAnswer = "Sweet"
+    var highscore = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        username.text = UserDefaults.standard.string(forKey: "userName");
+        let file = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("database.db")
+        
+        if sqlite3_open(file.path, &db) != SQLITE_OK {
+            print("error opening database")
+        } else {
+            let create = "CREATE TABLE IF NOT EXISTS Scores (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, score INTEGER)"
+            if sqlite3_exec(db, create, nil, nil, nil) != SQLITE_OK {
+                let err = String(cString: sqlite3_errmsg(db))
+                print("error creating db: \(err)")
+            }
+        }
     }
     
     
@@ -35,7 +50,7 @@ class EasyViewController: UIViewController {
         //checking user answer in consol (debuggin purpose)
         print("Player guessed: \(guessField.text as Optional)")
 
-        
+        let userNameStored = UserDefaults.standard.string(forKey: "userName");
         numberOfGuess = numberOfGuess + 1
         guessLabel.text = "Number of Guesses: \(numberOfGuess)"
         
@@ -44,7 +59,7 @@ class EasyViewController: UIViewController {
         
         //when the answer is correct
         if (guessAnswer == correctAnswer) {
-            let alert = UIAlertController(title: "You guessed right!", message: "Would like to go to the next level?", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "You guessed right!", message: "Would like to go to the next level?", preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in })
             let noAction = UIAlertAction(title: "NO", style: .default, handler: { (action) -> Void in })
 
@@ -66,13 +81,16 @@ class EasyViewController: UIViewController {
             answerLabel.text = ""
             scoreLabel.text = "Score: \(score)"
             
-            
-            
+            if (highscore < score ){
+                highscore = score
+
+            }
+            addScore(score: highscore, username: username.text!)
         }
         //when textfield is empty
         else if (guessField.text?.isEmpty ?? true) {
-            let alert = UIAlertController(title: "Error!", message: "The textfield cannot be empty, please guess your answer", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            let alert = UIAlertController(title: "Error!", message: "The textfield cannot be empty, please guess your answer", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil));
             self.present(alert, animated: true, completion: nil);
             
         }
@@ -92,6 +110,36 @@ class EasyViewController: UIViewController {
         guessField.text=""
         
     }//end of checkAnswer func
+    
+    func addScore(score: Int, username: String) {
+
+        let username = username
+        let score = score
+
+        let insert = "INSERT INTO Scores(username, score) VALUES (?,?)"
+        var stmt:OpaquePointer?
+
+        if sqlite3_prepare(db, insert, -1, &stmt, nil) != SQLITE_OK {
+            let err = String(cString: sqlite3_errmsg(db))
+            print("error preparing statement: \(err)")
+            return
+        }
+        if sqlite3_bind_text(stmt, 1, username, -1, nil) != SQLITE_OK {
+            let err = String(cString: sqlite3_errmsg(db))
+            print("error binding username: \(err)")
+            return
+        }
+        if sqlite3_bind_int(stmt, 2, Int32(score)) != SQLITE_OK {
+            let err = String(cString: sqlite3_errmsg(db))
+            print("error binding score: \(err)")
+            return
+        }
+        if sqlite3_step(stmt) != SQLITE_DONE {
+            let err = String(cString: sqlite3_errmsg(db))
+            print("error executing insert: \(err)")
+            return
+        }
+    }
     
     
 }//very last

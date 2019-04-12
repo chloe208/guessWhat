@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var idTxt: UILabel!
     
+    @IBOutlet weak var usernameTxt: UILabel!
+    
+    @IBOutlet weak var scoreTxt: UILabel!
+    
+    var score: Score?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let c = score {
+            idTxt.text = "\(c.id)"
+            usernameTxt.text = c.username
+            scoreTxt.text = "\(c.score)"
+        }
     }
 
 
