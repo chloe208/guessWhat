@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "guessWhat_T12/EasyViewController.swift"
-            timestampString = "576794381.687808"
+            timestampString = "576799910.456604"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "checkButton(_:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -10,6 +10,9 @@ import UIKit
 
 class UserInViewController: UIViewController {
 
+    @IBAction func signOut(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

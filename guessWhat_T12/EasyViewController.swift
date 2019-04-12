@@ -26,10 +26,21 @@ class EasyViewController: UIViewController {
     var correctAnswer = "Sweet"
     var highscore = 0
     
+    @IBAction func Back(_ sender: UIButton) {
+        let userLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "UserInviewController")
+        
+        if (userLoggedIn) == true{
+            self.present(newViewController, animated: true, completion: nil)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        username.text = UserDefaults.standard.string(forKey: "userName");
+        // check value of for key
+        username.text = UserDefaults.standard.string(forKey: "isUserLoggedIn")
+        
         let file = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("database.db")
         
         if sqlite3_open(file.path, &db) != SQLITE_OK {
@@ -51,6 +62,7 @@ class EasyViewController: UIViewController {
         print("Player guessed: \(guessField.text as Optional)")
 
         let userNameStored = UserDefaults.standard.string(forKey: "userName");
+        let userLoggedIn = UserDefaults.standard.value(forKey: "isUserLoggedIn")
         numberOfGuess = numberOfGuess + 1
         guessLabel.text = "Number of Guesses: \(numberOfGuess)"
         
@@ -67,7 +79,6 @@ class EasyViewController: UIViewController {
             alert.addAction(okAction)
             alert.addAction(noAction)
             self.present(alert, animated: true, completion: nil)
-            
             if numberOfGuess == 1 {
                 score = score + 10
             }
@@ -81,11 +92,14 @@ class EasyViewController: UIViewController {
             answerLabel.text = ""
             scoreLabel.text = "Score: \(score)"
             
-            if (highscore < score ){
-                highscore = score
+            if UserDefaults.standard.bool(forKey: "isUserLoggedIn") == true{
+                if (highscore < score ){
+                    highscore = score
 
+                }
+            
+            addScore(score: highscore, username: userNameStored!)
             }
-            addScore(score: highscore, username: username.text!)
         }
         //when textfield is empty
         else if (guessField.text?.isEmpty ?? true) {

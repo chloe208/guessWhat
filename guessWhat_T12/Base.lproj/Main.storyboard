@@ -365,7 +365,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="TJJ-US-g99" kind="show" id="ODm-16-Elm"/>
+                                    <segue destination="TJJ-US-g99" kind="show" id="O8b-8n-a12"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3y-rR-9Jh">
@@ -544,6 +544,14 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYA-k6-2uo">
+                                <rect key="frame" x="28" y="29" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="a9n-V9-vIv" kind="show" id="yA4-nA-SQE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gj3-SP-6DO"/>
@@ -857,6 +865,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <items>
                                     <barButtonItem title="Sign Out" width="118" id="0HZ-dc-KjU">
                                         <connections>
+                                            <action selector="signOut:" destination="TJJ-US-g99" id="Evw-4J-BIR"/>
                                             <segue destination="Tab-ua-afs" kind="show" id="h8d-bc-VYm"/>
                                         </connections>
                                     </barButtonItem>
@@ -922,12 +931,13 @@ Peng Jiang, 101083241, CRN-47220</string>
         <image name="zoo" width="1280" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a2a-8n-zEX"/>
+        <segue reference="afh-kW-rMh"/>
         <segue reference="hrg-oM-VWw"/>
-        <segue reference="Xwq-68-dcC"/>
-        <segue reference="TKA-7P-jH0"/>
-        <segue reference="ItY-g0-Xot"/>
-        <segue reference="ewt-fv-BFe"/>
+        <segue reference="FS8-wP-VHY"/>
+        <segue reference="IzR-AR-QSZ"/>
+        <segue reference="ncq-oe-4U4"/>
+        <segue reference="tNr-Cn-kSU"/>
+        <segue reference="J2O-7e-n4T"/>
         <segue reference="h8d-bc-VYm"/>
     </inferredMetricsTieBreakers>
 </document>
