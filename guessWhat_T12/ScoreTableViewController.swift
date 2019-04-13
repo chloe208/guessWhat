@@ -16,7 +16,7 @@ class ScoreTableViewController: UITableViewController {
     
     func readValues(){
         scores.removeAll()
-        let q = "SELECT * FROM Scores"
+        let q = "SELECT * FROM Scores ORDER BY score DESC, id ASC"
         var stmt:OpaquePointer?
         if sqlite3_prepare(db, q, -1, &stmt, nil) != SQLITE_OK {
             let err = String(cString: sqlite3_errmsg(db))
@@ -116,6 +116,7 @@ class ScoreTableViewController: UITableViewController {
         
         // Configure the cell...
         cell.textLabel?.text = scores[indexPath.row].username
+        cell.detailTextLabel?.text = String(scores[indexPath.row].score)
         
         return cell
     }

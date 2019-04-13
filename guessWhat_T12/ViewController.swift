@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
         if let c = score {
             idTxt.text = "\(c.id)"
             usernameTxt.text = c.username

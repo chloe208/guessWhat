@@ -16,7 +16,10 @@ class UserInViewController: UIViewController {
         Userlogged = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
         print(Userlogged)
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: <#T##Bundle?#>)
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let guestViewController = storyboard.instantiateViewController(withIdentifier: "GuestViewController") as! GuestViewController
+        self.present(guestViewController, animated: true, completion: nil)
+        
     }
     
     /*
