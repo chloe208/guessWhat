@@ -458,10 +458,10 @@ Peng Jiang, 101083241, CRN-47220</string>
             </objects>
             <point key="canvasLocation" x="2399" y="1297"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Score Table View Controller-->
         <scene sceneID="Ane-8A-gsK">
             <objects>
-                <viewController id="a9n-V9-vIv" customClass="TableViewController" customModule="guessWhat_T12" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a9n-V9-vIv" customClass="ScoreTableViewController" customModule="guessWhat_T12" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uA4-h3-hm8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
