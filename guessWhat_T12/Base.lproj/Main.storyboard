@@ -60,15 +60,15 @@ Peng Jiang, 101083241, CRN-47220</string>
             </objects>
             <point key="canvasLocation" x="134" y="9"/>
         </scene>
-        <!--View Controller-->
+        <!--Guest View Controller-->
         <scene sceneID="L1F-Oj-tgZ">
             <objects>
-                <viewController id="Tab-ua-afs" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="26w-YX-yJs">
+                <viewController storyboardIdentifier="GuestViewController" id="Tab-ua-afs" customClass="GuestViewController" customModule="guessWhat_T12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="26w-YX-yJs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-co-11N">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-co-11N">
                                 <rect key="frame" x="55" y="242" width="264" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -79,7 +79,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                     <segue destination="mpD-H8-GXW" kind="show" identifier="easy" id="ncq-oe-4U4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myu-OT-Xac">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myu-OT-Xac">
                                 <rect key="frame" x="55" y="313" width="264" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -90,7 +90,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                     <segue destination="dWv-Yy-xbu" kind="show" id="tNr-Cn-kSU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siE-3N-yvS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siE-3N-yvS">
                                 <rect key="frame" x="55" y="384" width="264" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -101,19 +101,19 @@ Peng Jiang, 101083241, CRN-47220</string>
                                     <segue destination="1q4-q5-6oy" kind="show" id="J2O-7e-n4T"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To GuessWhat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR4-7F-nMM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome To GuessWhat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR4-7F-nMM">
                                 <rect key="frame" x="26" y="92" width="314" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Select the Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72s-mc-BLW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please Select the Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72s-mc-BLW">
                                 <rect key="frame" x="99" y="165" width="177" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFL-2u-CZs">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFL-2u-CZs">
                                 <rect key="frame" x="0.0" y="579" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Sign In" width="139" id="Xw3-VE-yFZ">
@@ -427,7 +427,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About GuessWhat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTE-Vd-NVd">
-                                <rect key="frame" x="16" y="37" width="343" height="85"/>
+                                <rect key="frame" x="16" y="81" width="343" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -575,7 +575,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Now!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWq-GN-b3h">
-                                <rect key="frame" x="134" y="74" width="107" height="21"/>
+                                <rect key="frame" x="134" y="118" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -617,7 +617,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-ta-ocj">
-                                <rect key="frame" x="101" y="329" width="172" height="30"/>
+                                <rect key="frame" x="101" y="373" width="172" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Register">
@@ -700,7 +700,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Sign In " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-Zq-aTl">
-                                <rect key="frame" x="94" y="73" width="186" height="74"/>
+                                <rect key="frame" x="94" y="117" width="186" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -718,13 +718,13 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsG-uY-qMY">
-                                <rect key="frame" x="157" y="232" width="97" height="30"/>
+                                <rect key="frame" x="157" y="238" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAv-To-Ab3">
-                                <rect key="frame" x="139" y="312" width="97" height="36"/>
+                                <rect key="frame" x="139" y="318" width="97" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign In"/>
@@ -739,7 +739,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmf-Tf-Lqt">
-                                <rect key="frame" x="12" y="403" width="347" height="30"/>
+                                <rect key="frame" x="12" y="447" width="347" height="30"/>
                                 <state key="normal" title="I don't want to Sign In. Go back to the Main Menu"/>
                                 <connections>
                                     <segue destination="Tab-ua-afs" kind="show" id="y9T-MD-INK"/>
@@ -865,8 +865,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <items>
                                     <barButtonItem title="Sign Out" width="118" id="0HZ-dc-KjU">
                                         <connections>
-                                            <action selector="signOut:" destination="TJJ-US-g99" id="Evw-4J-BIR"/>
-                                            <segue destination="Tab-ua-afs" kind="show" id="h8d-bc-VYm"/>
+                                            <action selector="signOut:" destination="TJJ-US-g99" id="pfv-zZ-O14"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Score Board" width="211.5" id="85o-Ge-F1Q">
@@ -933,11 +932,11 @@ Peng Jiang, 101083241, CRN-47220</string>
     <inferredMetricsTieBreakers>
         <segue reference="a2a-8n-zEX"/>
         <segue reference="hrg-oM-VWw"/>
-        <segue reference="yA4-nA-SQE"/>
+        <segue reference="FS8-wP-VHY"/>
         <segue reference="IzR-AR-QSZ"/>
         <segue reference="ncq-oe-4U4"/>
         <segue reference="tNr-Cn-kSU"/>
         <segue reference="J2O-7e-n4T"/>
-        <segue reference="h8d-bc-VYm"/>
+        <segue reference="iTk-Af-gx1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,8 +11,23 @@ import UIKit
 class UserInViewController: UIViewController {
 
     @IBAction func signOut(_ sender: Any) {
+        var Userlogged: Bool
         UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
+        Userlogged = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        print(Userlogged)
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: <#T##Bundle?#>)
     }
+    
+    /*
+    @IBAction func signOut(_ sender: Any) {
+        var Userlogged: Bool
+        UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
+        Userlogged = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        print(Userlogged)
+    }
+ 
+ */
     override func viewDidLoad() {
         super.viewDidLoad()
 

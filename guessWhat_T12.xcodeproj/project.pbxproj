@@ -19,6 +19,7 @@
 		5AEAB74C2238BC5E009B5C39 /* guessWhat_T12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB74B2238BC5E009B5C39 /* guessWhat_T12Tests.swift */; };
 		5AEAB7572238BC5E009B5C39 /* guessWhat_T12UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB7562238BC5E009B5C39 /* guessWhat_T12UITests.swift */; };
 		BDE8A7BD226245FE00F572F9 /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8A7BC226245FE00F572F9 /* ScoreTableViewController.swift */; };
+		BDE8A7BF226259D100F572F9 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8A7BE226259D100F572F9 /* GuestViewController.swift */; };
 		BDF831212261031100EB1B55 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF831202261031100EB1B55 /* LeaderboardTableViewController.swift */; };
 		BDF83123226105FD00EB1B55 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF83122226105FD00EB1B55 /* Score.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		5AEAB7562238BC5E009B5C39 /* guessWhat_T12UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessWhat_T12UITests.swift; sourceTree = "<group>"; };
 		5AEAB7582238BC5E009B5C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE8A7BC226245FE00F572F9 /* ScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewController.swift; sourceTree = "<group>"; };
+		BDE8A7BE226259D100F572F9 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
 		BDF831202261031100EB1B55 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardTableViewController.swift; path = ../LeaderboardTableViewController.swift; sourceTree = "<group>"; };
 		BDF83122226105FD00EB1B55 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				5A18615C224475BA0063E1EA /* RegisterViewController.swift */,
 				5A18615E224477630063E1EA /* SignInViewController.swift */,
 				5A44356B2245582200825859 /* UserInViewController.swift */,
+				BDE8A7BE226259D100F572F9 /* GuestViewController.swift */,
 			);
 			path = guessWhat_T12;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				5A18615D224475BA0063E1EA /* RegisterViewController.swift in Sources */,
 				BDF83123226105FD00EB1B55 /* Score.swift in Sources */,
 				BDF831212261031100EB1B55 /* LeaderboardTableViewController.swift in Sources */,
+				BDE8A7BF226259D100F572F9 /* GuestViewController.swift in Sources */,
 				5A67AB0E225D9ED6007F40F8 /* EasyViewController.swift in Sources */,
 				5AEAB7392238BC5B009B5C39 /* ViewController.swift in Sources */,
 				5A44356C2245582200825859 /* UserInViewController.swift in Sources */,
