@@ -153,7 +153,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 pt when the answer is correct at 4 and more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNL-DP-EgB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 pt when the answer is correct at 4th and more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNL-DP-EgB">
                                 <rect key="frame" x="16" y="562" width="343" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -197,10 +197,10 @@ Peng Jiang, 101083241, CRN-47220</string>
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="8.5457271364317844"/>
         </scene>
-        <!--View Controller-->
+        <!--Advanced View Controller-->
         <scene sceneID="WTj-Hm-9tZ">
             <objects>
-                <viewController id="1q4-q5-6oy" sceneMemberID="viewController">
+                <viewController id="1q4-q5-6oy" customClass="AdvancedViewController" customModule="guessWhat_T12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5Q-6a-cl3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,6 +235,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkBtn:" destination="1q4-q5-6oy" eventType="touchUpInside" id="dxg-hg-1Ol"/>
                                     <action selector="checkButton:" destination="mpD-H8-GXW" eventType="touchUpInside" id="WQY-tY-0Tx"/>
                                 </connections>
                             </button>
@@ -265,15 +266,22 @@ Peng Jiang, 101083241, CRN-47220</string>
                         </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="6OF-Tl-Uie" id="0TN-gY-1qX"/>
+                        <outlet property="checkBtn" destination="Nha-07-FSZ" id="CLc-PN-3kQ"/>
+                        <outlet property="guessField" destination="Q3W-Ur-c1k" id="NA9-3T-uCi"/>
+                        <outlet property="guessLabel" destination="scG-Mm-tqc" id="0mQ-cK-jIA"/>
+                        <outlet property="scoreLabel" destination="wKl-kx-URO" id="VQp-ZX-Vac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbE-By-APz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2933.5999999999999" y="-264.01799100449779"/>
         </scene>
-        <!--View Controller-->
+        <!--Intermediate View Controller-->
         <scene sceneID="ycC-0l-t08">
             <objects>
-                <viewController id="dWv-Yy-xbu" sceneMemberID="viewController">
+                <viewController id="dWv-Yy-xbu" customClass="IntermediateViewController" customModule="guessWhat_T12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtr-n2-tHS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,6 +321,7 @@ Peng Jiang, 101083241, CRN-47220</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkBtn:" destination="dWv-Yy-xbu" eventType="touchUpInside" id="i0Z-4J-Yww"/>
                                     <action selector="checkButton:" destination="mpD-H8-GXW" eventType="touchUpInside" id="ceV-EV-S91"/>
                                 </connections>
                             </button>
@@ -342,6 +351,13 @@ Peng Jiang, 101083241, CRN-47220</string>
                         </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="lg6-tQ-ZIh" id="9lo-Kd-4kM"/>
+                        <outlet property="checkBtn" destination="nu6-fK-X19" id="oqN-FL-DEZ"/>
+                        <outlet property="guessField" destination="eEI-qB-pOC" id="PhC-DZ-I5K"/>
+                        <outlet property="guessLabel" destination="YRJ-Hl-fHT" id="LHM-h5-UaF"/>
+                        <outlet property="scoreLabel" destination="LwV-dN-h51" id="ldW-Oc-XXA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LN-gD-Xz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -896,10 +912,10 @@ Peng Jiang, 101083241, CRN-47220</string>
     <inferredMetricsTieBreakers>
         <segue reference="JRI-9T-LWQ"/>
         <segue reference="hrg-oM-VWw"/>
-        <segue reference="Xwq-68-dcC"/>
-        <segue reference="TKA-7P-jH0"/>
-        <segue reference="ItY-g0-Xot"/>
-        <segue reference="ewt-fv-BFe"/>
+        <segue reference="IzR-AR-QSZ"/>
+        <segue reference="ncq-oe-4U4"/>
+        <segue reference="tNr-Cn-kSU"/>
+        <segue reference="J2O-7e-n4T"/>
         <segue reference="h8d-bc-VYm"/>
     </inferredMetricsTieBreakers>
 </document>
