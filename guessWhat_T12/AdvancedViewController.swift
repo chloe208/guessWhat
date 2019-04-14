@@ -10,13 +10,14 @@ import UIKit
 
 class AdvancedViewController: UIViewController {
 
+   
     @IBOutlet weak var guessField: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var guessLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     
-    @IBOutlet weak var checkBtn: UIButton!
     
+    @IBOutlet weak var checkBtn: UIButton!
     
     var numberOfGuess = 0
     var score = 0
