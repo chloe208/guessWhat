@@ -87,9 +87,9 @@ class EasyViewController: UIViewController {
         if (guessAnswer == correctAnswer) {
             let alert = UIAlertController(title: "You guessed right!", message: "Would like to go to the next level?", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-                //                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                //                let level2Controller = storyBoard.instantiateViewController(withIdentifier: "Level2") as! Level2Controller;
-                //                self.present(level2Controller, animated: true, completion: nil);
+                                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                                let EasyViewController2 = storyBoard.instantiateViewController(withIdentifier: "EasyViewController2") as! EasyViewController2;
+                                self.present(EasyViewController2, animated: true, completion: nil);
             })
             
             let noAction = UIAlertAction(title: "NO", style: .default, handler: { (action) -> Void in

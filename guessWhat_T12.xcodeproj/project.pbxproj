@@ -16,6 +16,9 @@
 		5AC5DC51226299AF00A1A5DA /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DC50226299AF00A1A5DA /* ScoreTableViewController.swift */; };
 		5AC5DC5322629AE400A1A5DA /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DC5222629AE300A1A5DA /* GuestViewController.swift */; };
 		5AC5DC5522629B2100A1A5DA /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DC5422629B2100A1A5DA /* Score.swift */; };
+		5AC5DC572262E5D300A1A5DA /* EasyViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DC562262E5D200A1A5DA /* EasyViewController2.swift */; };
+		5AC5DC592262E60000A1A5DA /* IntermediateViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DC582262E60000A1A5DA /* IntermediateViewController2.swift */; };
+		5AC5DC5B2262E62900A1A5DA /* AdvancedViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DC5A2262E62900A1A5DA /* AdvancedViewController2.swift */; };
 		5AEAB7372238BC5B009B5C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB7362238BC5B009B5C39 /* AppDelegate.swift */; };
 		5AEAB7392238BC5B009B5C39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEAB7382238BC5B009B5C39 /* ViewController.swift */; };
 		5AEAB73C2238BC5B009B5C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEAB73A2238BC5B009B5C39 /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 		5AC5DC50226299AF00A1A5DA /* ScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewController.swift; sourceTree = "<group>"; };
 		5AC5DC5222629AE300A1A5DA /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
 		5AC5DC5422629B2100A1A5DA /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		5AC5DC562262E5D200A1A5DA /* EasyViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController2.swift; sourceTree = "<group>"; };
+		5AC5DC582262E60000A1A5DA /* IntermediateViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateViewController2.swift; sourceTree = "<group>"; };
+		5AC5DC5A2262E62900A1A5DA /* AdvancedViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedViewController2.swift; sourceTree = "<group>"; };
 		5AEAB7332238BC5B009B5C39 /* guessWhat_T12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guessWhat_T12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEAB7362238BC5B009B5C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEAB7382238BC5B009B5C39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,8 +128,11 @@
 				5AC5DC5222629AE300A1A5DA /* GuestViewController.swift */,
 				5AC5DC5422629B2100A1A5DA /* Score.swift */,
 				5A67AB0D225D9ED6007F40F8 /* EasyViewController.swift */,
+				5AC5DC562262E5D200A1A5DA /* EasyViewController2.swift */,
 				5A9B3022226192AF004219B9 /* IntermediateViewController.swift */,
+				5AC5DC582262E60000A1A5DA /* IntermediateViewController2.swift */,
 				5A9B3024226192C6004219B9 /* AdvancedViewController.swift */,
+				5AC5DC5A2262E62900A1A5DA /* AdvancedViewController2.swift */,
 				5AEAB73D2238BC5E009B5C39 /* Assets.xcassets */,
 				5AEAB73F2238BC5E009B5C39 /* LaunchScreen.storyboard */,
 				5AEAB7422238BC5E009B5C39 /* Info.plist */,
@@ -290,10 +299,13 @@
 				5A9B3025226192C6004219B9 /* AdvancedViewController.swift in Sources */,
 				5AC5DC5322629AE400A1A5DA /* GuestViewController.swift in Sources */,
 				5AEAB7392238BC5B009B5C39 /* ViewController.swift in Sources */,
+				5AC5DC5B2262E62900A1A5DA /* AdvancedViewController2.swift in Sources */,
+				5AC5DC572262E5D300A1A5DA /* EasyViewController2.swift in Sources */,
 				5A44356C2245582200825859 /* UserInViewController.swift in Sources */,
 				5AEAB7372238BC5B009B5C39 /* AppDelegate.swift in Sources */,
 				5AC5DC5522629B2100A1A5DA /* Score.swift in Sources */,
 				5AC5DC51226299AF00A1A5DA /* ScoreTableViewController.swift in Sources */,
+				5AC5DC592262E60000A1A5DA /* IntermediateViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

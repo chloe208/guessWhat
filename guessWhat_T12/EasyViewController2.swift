@@ -1,34 +1,35 @@
 //
-//  IntermediateViewController.swift
+//  EasyViewController2.swift
 //  guessWhat_T12
 //
-//  Created by Chloe Kim on 2019-04-12.
+//  Created by Chloe Kim on 2019-04-13.
 //  Copyright © 2019 T12. All rights reserved.
 //
 
 import UIKit
 import SQLite3
 
-class IntermediateViewController: UIViewController {
+class EasyViewController2: UIViewController {
 
     @IBOutlet weak var guessField: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var guessLabel: UILabel!
-    @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
+    
     
     @IBOutlet weak var checkBtn: UIButton!
-    @IBOutlet weak var backBtn: UINavigationBar!
-    
+    @IBOutlet weak var backBtn: UIBarButtonItem!
     
     var userLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
     var db: OpaquePointer?
     var numberOfGuess = 0
     var score = 0
-    var correctAnswer = "monkey"
+    var correctAnswer = "trunk"
     var highscore = 0
     
-
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,9 +54,8 @@ class IntermediateViewController: UIViewController {
                 print("error creating db: \(err)")
             }
         }
-        
     }//end of viewDidLoad()
-        
+
     @IBAction func backBtn(_ sender: Any) {
         if userLoggedIn {
             print("userLoggedIn")
@@ -70,9 +70,7 @@ class IntermediateViewController: UIViewController {
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "GuestViewController")
             self.present(newViewController, animated: true, completion: nil)
         }
-        
-    }//end of backBTN
-    
+    }//end of backBtn
     
     @IBAction func checkBtn(_ sender: Any) {
         //checking user answer in consol (debuggin purpose)
@@ -90,9 +88,10 @@ class IntermediateViewController: UIViewController {
             let alert = UIAlertController(title: "You guessed right!", message: "Would like to go to the next level?", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let IntermediateViewController2 = storyBoard.instantiateViewController(withIdentifier: "IntermediateViewController2") as! IntermediateViewController2;
-                self.present(IntermediateViewController2, animated: true, completion: nil);
+                let IntermediateViewController = storyBoard.instantiateViewController(withIdentifier: "IntermediateViewController") as! IntermediateViewController;
+                self.present(IntermediateViewController, animated: true, completion: nil);
             })
+            
             let noAction = UIAlertAction(title: "NO", style: .default, handler: { (action) -> Void in
                 if !userLoggedIn {
                     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -126,6 +125,7 @@ class IntermediateViewController: UIViewController {
             answerLabel.text = ""
             scoreLabel.text = "Score: \(score)"
             
+            
             if (highscore < score ){
                 highscore = score
                 
@@ -134,6 +134,7 @@ class IntermediateViewController: UIViewController {
             if userLoggedIn{
                 addScore(score: highscore, username: userNameStored!)
             }
+            
             
         }
             //when textfield is empty
@@ -145,15 +146,18 @@ class IntermediateViewController: UIViewController {
         }
             //when the answer is incorrect
         else {
+            //            let alert = UIAlertController(title: "Oh No!", message: "Please Guess Again", preferredStyle: UIAlertController.Style.alert)
+            //            let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in })
+            //
+            //            alert.addAction(okAction)
+            //            self.present(alert, animated: true, completion: nil)
+            
             answerLabel.text = "Wrong Answer! Please Guess Again"
             answerLabel.textColor = UIColor.red
             
         }
         guessField.resignFirstResponder()
         guessField.text=""
-        
-    
-   
     }//end of checkBtn
     
     func addScore(score: Int, username: String) {
@@ -186,10 +190,5 @@ class IntermediateViewController: UIViewController {
         }
     }
     
-
-
-}//very end
     
-    
-    
-
+}//very last
